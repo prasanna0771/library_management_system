@@ -1,6 +1,7 @@
 <?php
-define('DB_NAME', 'library_db');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', getenv('MYSQLHOST'));
+define('DB_USER', getenv('MYSQLUSER'));
+define('DB_PASSWORD', getenv('MYSQLPASSWORD'));
+define('DB_NAME', getenv('MYSQLDATABASE'));
+define('DB_PORT', getenv('MYSQLPORT'));
 ?>
